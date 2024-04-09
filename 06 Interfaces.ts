@@ -97,3 +97,9 @@ interface Employee {
   readonly id: number;
   email: string;
 }
+
+// Extending multiple interfaces
+interface Engineer extends Human, Employee {
+  level: string;
+  languages: string[];
+}
