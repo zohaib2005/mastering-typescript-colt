@@ -106,5 +106,8 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
-  "files": ["farmstand.ts", "index.ts"]
+  // "files": ["farmstand.ts", "index.ts"]
+  "include": ["src"],
+  // by default typescript excludes node modules directory but if we add exclude ourself then we need to add it
+  "exclude": ["src/dontTouch.js"]
 }
