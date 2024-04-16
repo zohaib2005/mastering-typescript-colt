@@ -59,3 +59,18 @@ merge<{ name: string }, { pets: string[] }>(
   { name: "colt" },
   { pets: ["blue", "elton"] }
 );
+
+interface Lengthy {
+  length: number;
+}
+
+function printDoubleLength<T extends Lengthy>(thing: T): number {
+  return thing.length * 2;
+}
+
+// function printDoubleLength(thing: Lengthy): number {
+//   return thing.length * 2;
+// }
+
+printDoubleLength("asdasd");
+printDoubleLength(234); //Not allowed!
