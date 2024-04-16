@@ -52,3 +52,10 @@ function merge<T extends object, U extends object>(object1: T, object2: U) {
     ...object2,
   };
 }
+
+const comboObj = merge({ name: "colt" }, { pets: ["blue", "elton"] });
+console.log(merge({ name: "Colt" }, { num: 9 }));
+merge<{ name: string }, { pets: string[] }>(
+  { name: "colt" },
+  { pets: ["blue", "elton"] }
+);
