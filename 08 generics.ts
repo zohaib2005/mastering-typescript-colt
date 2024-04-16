@@ -44,3 +44,11 @@ getRandomElement([1, 2, 3, 4]);
 //   const randIdx = Math.floor(Math.random() * list.length);
 //   return list[randIdx];
 // }
+
+// Generics With Constraints:
+function merge<T extends object, U extends object>(object1: T, object2: U) {
+  return {
+    ...object1,
+    ...object2,
+  };
+}
