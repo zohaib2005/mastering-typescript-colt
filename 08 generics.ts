@@ -36,3 +36,11 @@ function getRandomElement<T>(list: T[]): T {
 console.log(getRandomElement<string>(["a", "b", "c"]));
 getRandomElement<number>([5, 6, 21, 354, 567, 234, 654]);
 getRandomElement([1, 2, 3, 4]);
+
+// If you are working with React and TypeScript then your file will be tsx
+// and jsx confuse generics <> with html then we need to add <type,> in tsx
+// For Example
+// function getRandomElement<T,>(list: T[]): T {
+//   const randIdx = Math.floor(Math.random() * list.length);
+//   return list[randIdx];
+// }
