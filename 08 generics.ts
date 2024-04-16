@@ -74,3 +74,10 @@ function printDoubleLength<T extends Lengthy>(thing: T): number {
 
 printDoubleLength("asdasd");
 printDoubleLength(234); //Not allowed!
+
+function makeEmptyArray<T = number>(): T[] {
+  return [];
+}
+
+const nums = makeEmptyArray();
+const bools = makeEmptyArray<boolean>();
