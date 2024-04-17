@@ -154,3 +154,12 @@ function getFarmAnimalSound(animal: FarmAnimal) {
       return _exhaustiveCheck;
   }
 }
+
+const stevie: Rooster = {
+  name: "Stevie Chicks",
+  weight: 2,
+  age: 1.5,
+  kind: "rooster",
+};
+
+console.log(getFarmAnimalSound(stevie));
