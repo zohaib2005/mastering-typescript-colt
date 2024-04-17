@@ -54,3 +54,12 @@ console.log(getRuntime({ title: "Amadeus", duration: 140 }));
 console.log(
   getRuntime({ title: "Spongebob", numEpisodes: 80, episodeDuration: 30 })
 );
+
+// Instanceof Narrowing:
+function printFullDate(date: string | Date) {
+  if (date instanceof Date) {
+    console.log(date.toUTCString());
+  } else {
+    console.log(new Date(date).toUTCString());
+  }
+}
