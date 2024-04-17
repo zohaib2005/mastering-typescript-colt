@@ -23,3 +23,10 @@ const printLetters = (word?: string) => {
     console.log("YOU DID NOT PASS IN A WORD!");
   }
 };
+
+// EQUALITY NARROWING
+function someDemo(x: string | number, y: string | boolean) {
+  if (x === y) {
+    x.toUpperCase();
+  }
+}
